@@ -193,3 +193,101 @@ section {
     transform: scale(1.02);
     /* Efecto de ampliación ligera */
 }
+
+/* Contacto */
+.contacto {
+    display: flex; /* Flexbox */
+    justify-content: space-between; /* Elementos a los lados */
+    flex-wrap: wrap; /* Adaptable en pantallas pequeñas */
+    background-color: #2c3e50; /* Fondo igual al header */
+    color: white; /* Texto blanco */
+    margin-bottom: 3em; /* Espaciado inferior */
+  }
+  
+  .contacto aside {
+    min-width: 250px; /* Mínimo ancho */
+    margin-bottom: 1em; /* Separación inferior */
+  }
+  
+  form {
+    flex: 1; /* Ocupa espacio restante */
+    min-width: 250px; /* Ancho mínimo */
+    margin-left: 2em; /* Separación con el aside */
+  }
+  
+  form fieldset {
+    border: none; /* Elimina borde */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Elementos en columna */
+    gap: 0.5em; /* Espaciado entre elementos */
+  }
+  
+  form input,
+  form select,
+  form textarea {
+    padding: 0.5em; /* Relleno interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-bottom: 0.5em; /* Espaciado inferior */
+  }
+  
+  button {
+    background-color: #1abc9c; /* Verde agua */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 0.7em; /* Espaciado interno */
+    margin-top: 1em; /* Separación superior */
+    cursor: pointer; /* Cursor tipo botón */
+    font-weight: bold; /* Texto más grueso */
+  }
+  
+  button:hover {
+    background-color: #16a085; /* Verde más oscuro al pasar el mouse */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1a252f; /* Fondo más oscuro que el header */
+    color: white; /* Texto blanco */
+  }
+  
+  .social {
+    display: flex; /* Flexbox */
+    justify-content: center; /* Centrado */
+    gap: 1em; /* Separación entre íconos */
+    margin-bottom: 1em; /* Espacio inferior */
+  }
+  
+  .social img {
+    width: 24px; /* Tamaño fijo */
+    height: 24px;
+    transition: transform 0.2s ease; /* Animación suave al agrandar */
+  }
+  
+  .social img:hover {
+    transform: scale(1.2); /* Aumenta tamaño en hover */
+  }
+  
+  .footer-columns {
+    display: flex; /* Flexbox para columnas */
+    justify-content: space-around; /* Distribución equitativa */
+    flex-wrap: wrap; /* Adaptable a móviles */
+    gap: 2em; /* Separación entre columnas */
+    padding-top: 1em; /* Espacio superior */
+  }
+  
+  .footer-columns div {
+    max-width: 250px; /* Limita el ancho de cada columna */
+  }
+  
+  .footer-columns a {
+    display: block; /* Hace los links en bloques */
+    color: #1abc9c; /* Verde agua */
+    margin-top: 0.5em; /* Espaciado superior */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  .footer-columns a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+  }
+  
